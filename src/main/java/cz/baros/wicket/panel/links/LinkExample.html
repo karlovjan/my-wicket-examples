@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<wicket:panel>
+    <p>
+        Select Example:
+    </p>
+    <wicket:link>
+        <a href= "/cz/baros/wicket/page/simpleFormExample/SimpleFormPage.html" >Simple Form example</a>
+    </wicket:link>
+
+    <ul>
+
+        <li><a wicket:id="simpleFormPageLink">Simple Form example 2</a></li>
+        <li><a wicket:id="simpleFormPageLinkBookMarkable">Simple Form example 3</a></li>
+
+        <li><a wicket:id="statelessLink">Stateless Link</a></li>
+
+        <li><a wicket:id="invalidatesession" href="#">Stateless invalidate session link</a></li>
+    </ul>
+</wicket:panel>
+
+</body>
+</html>

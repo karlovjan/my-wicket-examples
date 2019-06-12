@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form wicket:id="inputForm" class="inputForm">
+<fieldset>
+
+    <legend><wicket:message key="simpleformpage.legend" /></legend>
+
+    <label for="name"><wicket:message key="simpleformpage.name" /></label>
+    <input wicket:id="name" id="name" type="text" size="100"/>
+
+    <label for="description"><wicket:message key="simpleformpage.description" /></label>
+    <textarea wicket:id= "description" id="description" rows= "5" cols= "40" ></textarea>
+
+    <input type="submit" wicket:id="saveButton" value="save" />
+    <input type="submit" wicket:id="resetButton" value="reset" />
+
+</fieldset>
+</form>
+
+<div id="feedbackPanel">
+    <span wicket:id="feedback"/>
+</div>
+
+</body>
+</html>
